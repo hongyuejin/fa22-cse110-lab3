@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +13,24 @@
     <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/1/1e/RPC-JP_Logo.png">
     <title>1st all hands meeting notes</title>
 </head>
-<body>
+<body >
     <header>
-        <h1>1st all hands meeting notes</h1>
-        <div>
+        <h1 style="position: relative;">1st all hands meeting notes</h1>
+        <div class="boxShort">
             <select name="meetings" id="meetingSelect">
                 <option value="">--Please select the meeting--</option>
                 <option value="Meeting1">1st meeting notes</option>
                 <option value="otherMeetings">No other meetings yet</option>
             </select></div>
-        <nav>
-            <b>Introduction of members</b>
-            <b>Superpower icebreaking activity</b>
-        </nav>
+        <ul>
+            <li><b>Introduction of members</b></li>
+			<li><b>Superpower icebreaking activity</b></li>
+		</ul>
     </header>
     <hr>
     <main>
         <section>
-            <h2>Introducation of members</h2>
+            <h2 style="position: static;">Introducation of members</h2>
             <ol>
                 <li>Grace Jin</li>
                 <li>Alex Wu</li>
@@ -42,7 +46,7 @@
         </section>
         <section>
             <h2>Superpower icebreaking activity</h2>
-            <div><p>Everyone stated the <em><em>superpower</em></em> that they most wanted</p></div>
+            <div class="relative">Everyone stated the <p class="inline"><em><em>superpower</em></em></p> that they most wanted</p></div>
             <form>
                 <fieldset>
                   <legend>Choose your favorite superpower</legend>
@@ -63,14 +67,14 @@
               </textarea>   </div>
             <details>
             <summary>For example: </summary> <br>
-            <i>Some of them wanted teleport superpower <br>
+            <i>Some of them wanted <span id="param1">teleport superpower</span> <br>
             Some of them wanted to slow time down so they can finish work before ddl <br>
-            Some of them wanted to wake up totally refreshed no matter how long they slept <br> </i> </details>
+            Some of them wanted to <p class="inBlk">wake up</p> totally refreshed no matter how long they slept <br> </i> </details>
         </section>
         <hr>
         <section>
             <h3><strong>Meeting video & audio recording</strong></h3>
-            <div>
+            <div class="boxLong">
                 <ul>
                     <li>
                         <span>Meeting video <video height="100" controls>
@@ -91,9 +95,33 @@
             <option value="audio">
             </datalist>
         </section>
+		<section>
+			<h3>Basic understanding of flexbox</h3>
+			<div class="box">
+				<div>Object 1</div>
+				<div>Object 2</div>
+				<div>Object 3</div>
+			</div>
+		</section>
+
+		<section>
+			<h3>Basic understanding of grid</h3>
+			<div class="container">
+				<div class="item">Object 1</div>
+				<div class="item">Object 2</div>
+				<div class="item">Object 3</div>
+				<div class="item">Object 4</div>
+			</div>
+		</section> 
+
+		<section>
+			<h3>Basic understanding of media query</h3>
+				<a class= "highlight1" href="#">Hover me!</a>	
+		</section> 
+
     </main>
     <hr>
-    <footer>
+    <footer style="text-align:center;"> 
         <div>
             <span><img class="notetake"
                 src="https://media-exp1.licdn.com/dms/image/C5603AQGfrM5eOrTqsg/profile-displayphoto-shrink_800_800/0/1616632249221?e=1670457600&v=beta&t=mH7BAeX_YZ4HMcjBU1JQ-oGSl28TcW6XmytLctKNbwY"
@@ -102,7 +130,7 @@
             <a href="mailto:hojin@ucsd.edu"> Email for more information
             </a></span>
         </div>
-        <div><span>Or subscribe for updates! <button class="subscribe" type="button">Subscribe</button>
+        <div><span>Or subscribe for updates! <button class="highlight">Subscribe</button>
         </span></div>    
     </footer>
 </body>
