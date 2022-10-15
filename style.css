@@ -1,0 +1,149 @@
+/*box model shorthand & flexbox*/
+.boxShort {
+	width: 230px;
+	height: 20px;
+	margin: 2vw 2vw 2vw 2vw;
+	padding: 5px 5px 5px 5px;
+	border: 2px solid #ffebcd;
+	border-radius: 5px;
+}
+
+/*box model longhand*/
+.boxLong {
+	width: 400px;
+	height: 200px;
+	margin-top: 2ch;
+	margin-bottom: 2ch;
+	margin-left: 2.5ch;
+	margin-right: 2.5ch;
+	padding-top: 0cm;
+	padding-bottom: 0cm;
+	padding-left: 0cm;
+	padding-right: 0cm;
+	border-style:dashed;
+	border-color: antiquewhite;
+	border-width: 1px;
+	border-radius: 80px;
+}
+
+/*body setting*/
+body {
+	background-color:hwb(120 56% 7%);
+	border: 2px solid blanchedalmond;
+	padding-left: 15px;
+}
+  
+/*universal selector*/
+*{
+	font-family: 'Fuzzy Bubbles', cursive;
+}
+
+/*element selector*/
+h1 {
+	color: hsl(80, 13%, 18%);
+	margin-left: 0rem;
+	text-decoration: wheat wavy overline;
+	text-align:center;
+}
+
+/*element list selector*/
+h2,h3 {
+	color: rgb(213, 225, 166);
+	margin-left: 2ex;
+}
+
+/*class selector & display*/
+p {
+	color: white;
+}
+
+p.inline{
+	display: inline;
+	max-width: 150px;
+}
+p.inBlk{
+	display: inline-block;
+	min-width: 55px;
+}
+
+/*combining 2 selectors & relative position*/
+div.relative {
+	position: relative;
+	left: 10px;
+	width: 500px;
+	height: 20px;
+	padding-bottom: 5px;
+	text-align: center;
+	border: 3px solid #9bc3e5;
+}
+
+/*pseudocode-class selector*/
+button.highlight:hover {
+	color: #8390a4;
+	font-size: 48px;
+	font-family: 'Fuzzy Bubbles', cursive;
+} 
+
+/*pseudocode-class selector*/
+a:active {
+	background-color: rgb(220, 173, 245);
+} 
+
+/*id selector*/
+#param1 {
+	color: #9bc3e5;
+}
+
+/*attribute selector*/
+a[href*="mailto"]{
+	color: aqua;
+}
+
+/*Decendant Combinators*/
+ul li {
+	color: cornsilk;
+}
+
+/*Child Combinator*/
+ol > li {
+	text-indent: 20pt;
+}
+
+/*General sibling combinator*/
+span~p {
+	background-color: rgb(28, 39, 30);
+}
+
+/*Adjacent sibling combinator*/
+span~p {
+	text-decoration: line-through;
+}
+
+/*Flexbox*/
+.box{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-basis: auto;
+	flex-wrap: nowrap;
+	flex-flow: row wrap;
+}
+
+/*grid and items*/
+.container {
+	display: grid;
+	column-gap: 10px;
+	row-gap: 10px;
+	grid-template-columns: auto auto auto;
+}
+.item {
+	border: 1px solid rgba(170, 180, 176, 0.8);
+	font-size: 30px;
+	text-align: center;
+}
+
+/*media query*/
+@media screen and (max-width: 1080px) {
+	body {
+		background-color: rgb(126, 153, 142);
+	}
+}
